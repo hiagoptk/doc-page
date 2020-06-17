@@ -10,6 +10,7 @@
     <title>Gradientes com CSS</title>
 </head>
 <body>
+    <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
     <header id="header">
         <div>
             <h2 id="headerTitle">Gradientes em CSS</h2>
@@ -39,7 +40,145 @@
         </nav>
     </header>
 
-    
+    <!-- CENTRO DA PAGINA -->
+    <div id="main-doc">
+        <section id="gradiente_linear" class="main-section">
+            <h1>Gradiente Linear</h1>
+            <p>Gradientes são uma forma de conseguirmos um efeito suave de transição
+                 entre 2 ou mais cores. Temos dois tipos de gradientes no CSS, e um deles é o Linear.</p>
+            <p>Esse gradiente tipo de gradiente pode ter diversas direções, de cima para baixo, da 
+                esquerda para a direita, ou o oposto. Pode também ser na diagonal de qualquer um dos cantos</p>
+            <div class="content">
+                <h2>Sintaxe</h2>
+                <p>Para conseguir um gradiente é necessário definirmos ao menos dois pontos de cores, podendo
+                    também definir a direção tomada pelo gradiente. Veja:</p>
+                
+                <code>
+                    background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+                </code>
+
+                <h4>Default</h4>
+                <p>Por padrão, a direção do gradiente linear é semre de baixo para cima, então se não definirmos 
+                    a direção, e settarmos apenas os pontos de cor, ele resultará em algo mais ou menos assim:
+                </p>
+
+                <code>
+                    #div {
+                        background-image: linear-gradient(red, yellow);
+                      }
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/tobottom.png" alt="gradiente lider do vermelho pro amarelo, de cima para baixo">
+                </div>
+
+                <h4>Linear Horizontal</h4>
+                <p>Para a construção de um gradiente horizontal, basta definirmos para qual direção 
+                    nosso gradiente vai apontar, seja pra esquerda seja pra direita, usamos to left ou to right pra isso. 
+                </p>
+                <code>
+                    #div {
+                        background-image: linear-gradient(to right, red , yellow);
+                      }
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/toright.png" alt="gradiente lider do vermelho pro amarelo, da esquerda para a direita">
+                </div>
+
+                <h4>Linear diagonal</h4>
+                <p>Já para a criação de um gradiente podemos usar direções de forma semelhante à to right/to left, ou usarmos graus para isso</p>
+
+                <code>
+                    #grad {
+                        background-image: linear-gradient(to bottom right, red, yellow);
+                      }
+                      
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/tobottonright.png" alt="gradiente lider do vermelho pro amarelo, da esquerda superior à direita inferior">
+                </div>
+
+                <code>
+                    #grad {
+                        background-image: linear-gradient(-90deg, red, yellow);
+                      }
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/menosnove.png" alt="gradiente com -90º de inclinação">
+                </div>
+            </div>
+
+
+            <div class="content">
+                <h2>Usando multiplas cores</h2>
+                <p>Conseguimos usar mais de duas cores num gradiente linear, bastando pra isso acrescentarmos mais
+                    cores a linha de código do css. Veja:
+                </p>
+
+                <code>
+                    #grad {
+                        background-image: linear-gradient(red, yellow, green);
+                      }
+                </code>
+                <div class="exImg">
+                    <img src="./assets/trescores.png" alt="">
+                </div>
+
+                <code>
+                    #grad {
+                        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+                      }
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/rainbow.png" alt="">
+                </div>
+            </div>
+
+            <div class="content">
+                <h2>Usando transparência</h2>
+                <p>O gradiente no CSS também suporta o uso de transparência, que pode ser usada pra criar os famosos Fade Effects.
+                    Nesse caso, a sintaxe muda um pouco e novos conceitos precisam ser reavaliados. 
+                </p>
+                <p>O a transparencia no CSS é definida entre 0 (transparente) e 1 (opaco). Por exemplos, o código rgb para vermelho é 
+                    RGB(255, 0, 0) onde cada casa separada pela virgula corresponde a uma das 3 cores de RGB(Red = 255, Green = 0, Blue = 0).
+                    A transparência é definida acrescentando mais uma casa aos parênteses, ficando algo como RGB(255, 0, 0, 0.5). A casa 
+                    da transparência pode ser ocupada por números flutuantes, como no exemplo dado, onde a transparência do vermelho ficou 
+                    em 50%. 
+                </p>
+                <p>O exemplo abaixo retorna o seguinte resultado: </p>
+                <code>
+                    #grad {
+                        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                      }
+                </code>
+                <div class="exImg">
+                    <img src="./assets/transparente.png">
+                </div>
+            </div>
+
+            <div class="content">
+                <h2>Repetindo um gradiente linear</h2>
+                <p>O gradiente no css tem uma function chama repeating-linear-gradient() usada exatamente pra isso. Veja:</p>
+
+                <code>
+                    #grad {
+                        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+                      }
+                </code>
+
+                <div class="exImg">
+                    <img src="./assets/repeating.png">
+                </div>
+            </div>
+            <div class="content"></div>
+        </section>
+
+        <section id="gradiente_radial" class="main-section"></section>
+    </div>
     
 </body>
 </html>
