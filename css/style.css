@@ -10,8 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
- 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,6 +100,51 @@ p {
     display: none;
 }
 
+#navbar2 ul {
+    list-style: none;
+}
+
+#navbar2 li {
+    border-bottom: solid 1px #00bedf;
+}
+
+#navbar2 li a:hover {
+    background-color: #0196b1f1;
+}
+
+@media (min-width: 600px) {
+    #desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 30%;
+        height: 100vh;
+        padding-top: 5px 10px;
+
+        position: fixed;
+        left: 0;
+    }
+
+    #navbar1 {
+        display: none;
+        
+    }
+
+    #navbar2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: ;
+    }
+}
+
 
 /* ------- x ------- *\
     CORPO DA PAGE
@@ -112,6 +155,16 @@ p {
     width: 90%;
     margin: 50px 0;
     padding: 8px;
+}
+
+@media (min-width: 600px) {
+    #main-doc {
+        width: 55%;
+        position: absolute;
+        right: 0;
+
+        margin: 25px 30px;
+    }
 }
 
 #gradiente_linear {
@@ -224,4 +277,18 @@ code {
     align-items: center;
     justify-items: center;
     font-size: 13px;
+}
+
+@media (min-width: 600px) {
+    #footer {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;   
+    }
+
+    #footer p {
+        margin: 0 15px;
+    }
 }
