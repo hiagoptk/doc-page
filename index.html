@@ -21,20 +21,19 @@
             <div id="dropdown">
                 <button class="dropbtn"><p>Gradiente Linear</p></button>
                 <div id="linear-content">
-                    <a href="#" class="nav-link">Sintax</a>
-                    <a href="#" class="nav-link">Usando ângulos</a>
-                    <a href="#" class="nav-link">Usando múltiplas cores</a>
-                    <a href="#" class="nav-link">Usando transparência</a>
-                    <a href="#" class="nav-link">Repetição de Gradiente</a>
+                    <a href="#sintax_linear" class="nav-link">Sintax</a>
+                    <a href="#usando_mais_cores" class="nav-link">Usando múltiplas cores</a>
+                    <a href="#usando_transparencia" class="nav-link">Usando transparência</a>
+                    <a href="#repeticao_de_gradiente_linear" class="nav-link">Repetição de Gradiente</a>
                 </div>
             </div>
             
             <div id="dropdown">
                 <button class="dropbtn"><p>Gradiente Radial</p></button>
                 <div id="radial-content">
-                    <a href="#" class="nav-link">Sintaxe</a>
-                    <a href="#" class="nav-link">Definindo o Formato</a>
-                    <a href="#" class="nav-link">Repetição de Gradiente</a>
+                    <a href="#sintax_radial" class="nav-link">Sintaxe</a>
+                    <a href="#definindo_o_formato" class="nav-link">Definindo o Formato</a>
+                    <a href="#repeticao_de_gradiente_radial" class="nav-link">Repetição de Gradiente</a>
                 </div>
             </div>
             
@@ -65,7 +64,7 @@
                  entre 2 ou mais cores. Temos dois tipos de gradientes no CSS, e um deles é o Linear.</p>
             <p>Esse gradiente tipo de gradiente pode ter diversas direções, de cima para baixo, da 
                 esquerda para a direita, ou o oposto. Pode também ser na diagonal de qualquer um dos cantos</p>
-            <div class="main-section">
+            <div id="sintax_linear" class="main-section">
                 <h2>Sintax</h2>
                 <p>Para conseguir um gradiente é necessário definirmos ao menos dois pontos de cores, podendo
                     também definir a direção tomada pelo gradiente. Veja:</p>
@@ -129,7 +128,7 @@
             </div>
 
 
-            <div class="main-section">
+            <div id="usando_mais_cores" class="main-section">
                 <h2>Usando multiplas cores</h2>
                 <p>Conseguimos usar mais de duas cores num gradiente linear, bastando pra isso acrescentarmos mais
                     cores a linha de código do css. Veja:
@@ -155,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="main-section">
+            <div id="usando_transparencia" class="main-section">
                 <h2>Usando transparência</h2>
                 <p>O gradiente no CSS também suporta o uso de transparência, que pode ser usada pra criar os famosos Fade Effects.
                     Nesse caso, a sintaxe muda um pouco e novos conceitos precisam ser reavaliados. 
@@ -177,7 +176,7 @@
                 </div>
             </div>
 
-            <div class="main-section">
+            <div id="repeticao_de_gradiente_linear" class="main-section">
                 <h2>Repetindo um gradiente linear</h2>
                 <p>O gradiente no css tem uma function chama repeating-linear-gradient() usada exatamente pra isso. Veja:</p>
 
@@ -200,7 +199,7 @@
                 onde uma transição suave entre as cores acontecem em círclos partindo de seu centro.
             </p>
 
-            <div class="main-section">
+            <div id="sintax_radial" class="main-section">
                 <h4>Sintax</h4>
             <code>
                 background-image: radial-gradient(shape size at position, start-color, ..., last-color);
@@ -235,7 +234,7 @@
 
             </div>
 
-            <div class="main-section circle">
+            <div id="definindo_o_formato" class="main-section circle">
                 <h2>Definindo o formato</h2>
 
                 <p>O gradiente radial possui dois formatos, elipse, o formato que vimos 
@@ -253,7 +252,7 @@
 
             </div>
 
-            <div class="main-section">
+            <div id="repeticao_de_gradiente_radial" class="main-section">
                 <h2>Repetindo Gradientes Radiais</h2>
                 <p>Assim como no Linear, o CSS traz uma função de repetição do gradiente, 
                     'repeating-radial-gradient()' e ela funciona de maneira semelhante, saca só:
