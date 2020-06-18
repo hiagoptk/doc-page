@@ -40,6 +40,10 @@ p {
     background-color: black;
 }
 
+#headerTitle {
+    margin-left: 8px;
+}
+
 #navbar1 {
     display: flex;
     flex-direction: row;
@@ -96,3 +100,72 @@ p {
 #navbar2 {
     display: none;
 }
+
+
+/* ------- x ------- *\
+    CORPO DA PAGE
+\*                   */
+
+#main-doc {
+    border: solid skyblue 1px;
+    width: 90%;
+    margin: 50px 0;
+    padding: 8px;
+}
+
+#gradiente_linear {
+    border: limegreen solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section {
+    margin: 20px 0;
+}
+
+.main-section h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+code {
+    border: gray solid 1px;
+    border-radius: 2px;
+}
+
+.exImg {
+    border: magenta solid 1px;
+    width: 99%;
+    min-height: 50px;
+    margin: 10px 0;
+}
+
+ /* DIFERENTES GRADIENTES */
+
+#boxDefaultLinear {
+    background-image: linear-gradient(rgb(0, 255, 13), rgb(0, 174, 255));
+}
+
+
+#boxHorizontal {
+    background-image: linear-gradient(to right, rgb(0, 255, 13), rgb(0, 174, 255));
+}
+
+#boxDiagonal {
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 13), rgb(0, 174, 255));
+}
+
+
+#boxAngulo {
+    background-image: linear-gradient(-90deg, rgb(0, 255, 13), rgb(0, 174, 255));
+}
+
+#boxTresCores {
+    background-image: linear-gradient(rgb(0, 255, 13), rgb(0, 174, 255), rgb(132, 0, 255));
+}
+
+#boxRainbown {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  }
