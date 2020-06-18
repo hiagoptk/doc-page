@@ -16,7 +16,7 @@
             <h2 id="headerTitle">Gradientes em CSS</h2>
         </div>
 
-        <nav id="navbar">
+        <nav id="navbar1">
             <ul>
                 <li>
                     <a class="nav-link" href="#gradiente_linear"><p>Gradiente Linear</p></a>
@@ -36,6 +36,22 @@
                         <a href="#" class="nav-link">Repetindo um gradiente radial</a>
                     </div>
                 </li>
+            </ul>
+        </nav>
+
+        <nav id="navbar2">
+            <ul>
+                <li><a class="nav-link" href="#"> <p> Gradiente Linear </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Sintax </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Usando ângulos </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Usando múltiplas cores </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Usando transparência </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Repetindo um gradiente linear </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Gradientes Radiais </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Sintax </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Pontos de cores com diferentes espaçamentos </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Definindo o formato </p> </a></li>
+                <li><a class="nav-link" href="#"> <p> Repetindo Gradientes Radiais </p> </a></li>
             </ul>
         </nav>
     </header>
@@ -63,13 +79,13 @@
                 </p>
 
                 <code>
-                    #div {
+                    #boxDefaultLinear {
                         background-image: linear-gradient(red, yellow);
                       }
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/tobottom.png" alt="gradiente lider do vermelho pro amarelo, de cima para baixo">
+                <div id="boxDefaultLinear" class="exImg">
+                    
                 </div>
 
                 <h4>Linear Horizontal</h4>
@@ -77,37 +93,37 @@
                     nosso gradiente vai apontar, seja pra esquerda seja pra direita, usamos to left ou to right pra isso. 
                 </p>
                 <code>
-                    #div {
+                    #boxHorizontal {
                         background-image: linear-gradient(to right, red , yellow);
                       }
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/toright.png" alt="gradiente lider do vermelho pro amarelo, da esquerda para a direita">
+                <div id="boxHorizontal" class="exImg">
+                   
                 </div>
 
                 <h4>Linear diagonal</h4>
                 <p>Já para a criação de um gradiente podemos usar direções de forma semelhante à to right/to left, ou usarmos graus para isso</p>
 
                 <code>
-                    #grad {
+                    #boxDiagonal {
                         background-image: linear-gradient(to bottom right, red, yellow);
                       }
                       
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/tobottonright.png" alt="gradiente lider do vermelho pro amarelo, da esquerda superior à direita inferior">
+                <div id="boxDiagonal" class="exImg">
+                   
                 </div>
 
                 <code>
-                    #grad {
+                    #boxAngulo {
                         background-image: linear-gradient(-90deg, red, yellow);
                       }
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/menosnove.png" alt="gradiente com -90º de inclinação">
+                <div id="boxAngulo" class="exImg">
+                   
                 </div>
             </div>
 
@@ -119,22 +135,22 @@
                 </p>
 
                 <code>
-                    #grad {
+                    #boxTresCores {
                         background-image: linear-gradient(red, yellow, green);
                       }
                 </code>
-                <div class="exImg">
-                    <img src="./assets/trescores.png" alt="">
+                <div id="boxTresCores" class="exImg">
+                   
                 </div>
 
                 <code>
-                    #grad {
+                    #box {
                         background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
                       }
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/rainbow.png" alt="">
+                <div id="" class="exImg">
+                    
                 </div>
             </div>
 
@@ -151,12 +167,12 @@
                 </p>
                 <p>O exemplo abaixo retorna o seguinte resultado: </p>
                 <code>
-                    #grad {
+                    #box {
                         background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
                       }
                 </code>
-                <div class="exImg">
-                    <img src="./assets/transparente.png">
+                <div id="" class="exImg">
+                    
                 </div>
             </div>
 
@@ -165,20 +181,99 @@
                 <p>O gradiente no css tem uma function chama repeating-linear-gradient() usada exatamente pra isso. Veja:</p>
 
                 <code>
-                    #grad {
+                    #boxRepeate {
                         background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
                       }
                 </code>
 
-                <div class="exImg">
-                    <img src="./assets/repeating.png">
+                <div id="boxRepeat" class="exImg">
+                    
                 </div>
             </div>
-            <div class="content"></div>
+
         </section>
 
-        <section id="gradiente_radial" class="main-section"></section>
+        <section id="gradiente_radial" class="main-section">
+            <h2>Gradientes Radiais</h2>
+            <p>Um outro tipo de gradiente possível de ser feito com o CSS é o Gradiente Radial,
+                onde uma transição suave entre as cores acontecem em círclos partindo de seu centro.
+            </p>
+
+            <div class="content">
+                <h4>Sintax</h4>
+            <code>
+                background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+            </code>
+            <p>Por padrão o gradiente linear tem o 'shape' settado como elipse, e a posição como centro.
+                Essa combinação resultaria em algo parecido com isso: 
+            </p>
+            <code>
+                #boxDefaultRadial {
+                    background-image: radial-gradient(red, yellow, green);
+                  }
+            </code>
+            <div id="boxDefaultRadial" class="exImg">
+                
+            </div>
+            
+            <h4>Pontos de cores com diferentes espaçamentos</h4>
+            <p>É possível também definirmos o espaçamento das cores de forma manual,
+                como é feito no exemplo seguinte. Isso pode nos oferecer diferentes 
+                efeitos. Veja:
+            </p>
+
+            <code>
+                #boxDifSpaces {
+                    background-image: radial-gradient(red, yellow, green);
+                  }
+            </code>
+
+            <div id="boxDifSpaces" class="exImg">
+               
+            </div>
+
+            </div>
+
+            <div class="content">
+                <h2>Definindo o formato</h2>
+
+                <p>O gradiente radial possui dois formatos, elipse, o formato que vimos 
+                    nos exemplos anteriores e que inclusive é o padrão do radial. O 
+                    segundo formato é o circle, como no exemplo seguinte. </p>
+                
+                <code>
+                    #boxCircle {
+                        background-image: radial-gradient(circle, red, yellow, green);
+                      }
+                </code>
+                <div id="boxCircle" class="exImg">
+
+                </div>
+
+            </div>
+
+            <div class="content">
+                <h2>Repetindo Gradientes Radiais</h2>
+                <p>Assim como no Linear, o CSS traz uma função de repetição do gradiente, 
+                    'repeating-radial-gradient()' e ela funciona de maneira semelhante, saca só:
+                </p>
+                <code>
+                    #boxRepeatRadial {
+                        background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+                      }
+                </code>
+                <div id="boxRepeatRadial" class="exImg">
+
+                </div>
+            </div>
+        </section>
     </div>
     
+    <!-- FOOTER DA PAGINA -->
+    <footer id="footer">
+        <p>Code feito com <i class="fas fa-heart"></i>, <i class="fas fa-coffee"></i>, 
+            e muitas <i class="fas fa-cloud-moon"></i> sem dormir. Espero que goste!</p>
+    </footer>
+
 </body>
 </html>
