@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bc576e1f1b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Combo&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/style.css">
   
     <title>Gradientes com CSS</title>
 </head>
@@ -17,26 +17,27 @@
         </div>
 
         <nav id="navbar1">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#gradiente_linear"><p>Gradiente Linear</p></a>
-                    <div id="linear-content">
-                        <a href="#" class="nav-link">Sintaxe</a>
-                        <a href="#" class="nav-link">Usando ângulos</a>
-                        <a href="#" class="nav-link">Usando múltiplas core</a>
-                        <a href="#" class="nav-link">Usando transparência</a>
-                        <a href="#" class="nav-link">Repetindo um gradiente linear</a>
-                    </div>
-                </li>
-                <li>
-                    <a class="nav-link" href="#gradiente_radial"><p>Gradiente Radial</p></a>
-                    <div id="radial-content">
-                        <a href="#" class="nav-link">Sintaxe</a>
-                        <a href="#" class="nav-link">Definindo o Formato</a>
-                        <a href="#" class="nav-link">Repetindo um gradiente radial</a>
-                    </div>
-                </li>
-            </ul>
+            
+            <div id="dropdown">
+                <button class="dropbtn"><p>Gradiente Linear</p></button>
+                <div id="linear-content">
+                    <a href="#" class="nav-link">Sintax</a>
+                    <a href="#" class="nav-link">Usando ângulos</a>
+                    <a href="#" class="nav-link">Usando múltiplas core</a>
+                    <a href="#" class="nav-link">Usando transparência</a>
+                    <a href="#" class="nav-link">Repetindo um gradiente linear</a>
+                </div>
+            </div>
+            
+            <div id="dropdown">
+                <button class="dropbtn"><p>Gradiente Radial</p></button>
+                <div id="radial-content">
+                    <a href="#" class="nav-link">Sintaxe</a>
+                    <a href="#" class="nav-link">Definindo o Formato</a>
+                    <a href="#" class="nav-link">Repetindo um gradiente radial</a>
+                </div>
+            </div>
+            
         </nav>
 
         <nav id="navbar2">
